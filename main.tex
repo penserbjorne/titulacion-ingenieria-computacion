@@ -1,0 +1,284 @@
+%%%%%%%%%%%%
+%% Please rename this main.tex file and the output PDF to
+%% [lastname_firstname_graduationyear]
+%% before submission.
+%%
+%% This .tex file is for use with BibLaTeX. Please use
+%% main-bibtex.tex instead if you prefer BibTeX.
+%%%%%%%%%%%%
+
+\documentclass[12pt]{caltech_thesis}
+\usepackage[hyphens]{url}
+\usepackage{lipsum}
+\usepackage{graphicx}
+
+\usepackage{todonotes}
+
+%% Tentative: newtx for better-looking Times
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+
+% Must use biblatex to produce the Published Contents and Contributions, per-chapter bibliography (if desired), etc.
+\usepackage[
+    backend=biber,natbib,
+    % IMPORTANT: load a style suitable for your discipline
+    style=authoryear
+]{biblatex}
+
+% Name of your .bib file(s)
+\addbibresource{example.bib}
+\addbibresource{ownpubs.bib}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Portada
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Do remember to remove the square bracket!
+\title{Informe de Trabajo Profesional}
+\author{Paul Sebastian Aguilar Enriquez}
+
+\degreeaward{Ingeniero en Computación}                 % Degree to be awarded
+\university{Universidad Nacional Autónoma de México}    % Institution name
+\address{Ciudad de México}                     % Institution address
+\unilogo{img/01-logo-unam.png}                                 % Institution logo
+\copyyear{2022}  % Year (of graduation) on diploma
+\defenddate{[Exact Date]}          % Date of defense
+
+%%  If you'd like to remove the Caltech logo from your title page, simply remove the "[logo]" text from the maketitle command
+\maketitle[logo]
+%\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Licenciamiento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\orcid{[Author ORCID]}
+
+%% IMPORTANT: Select ONE of the rights statement below.
+%\rightsstatement{All rights reserved}
+% \rightsstatement{All rights reserved except where otherwise noted}
+\rightsstatement{Algunos derechos reservados.\\Este documento es distribuido bajo una licencia\\``Creative Commons Attribution-NonCommercial''.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Agradecimientos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{acknowledgements} 	 
+   [Add acknowledgements here. If you do not wish to add any to your thesis, you may simply add a blank titled Acknowledgements page.]
+\end{acknowledgements}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Resumen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+   [This abstract must provide a succinct and informative condensation of your work. Candidates are welcome to prepare a lengthier abstract for inclusion in the dissertation, and provide a shorter one in the CaltechTHESIS record.]
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Contenido y contribuciones publicadas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Uncomment the `iknowhattodo' option to dismiss the instruction in the PDF.
+\begin{publishedcontent}%[iknowwhattodo]
+% List your publications and contributions here.
+\nocite{Cahn:etal:2015,Cahn:etal:2016}
+\end{publishedcontent}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Índices
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+\listoffigures
+\listoftables
+\printnomenclature
+
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   El informe de trabajo profesional es un documento que describe las actividades
+%   profesionales que durante o al término de sus estudios desarrolla un alumno por
+%   al menos un semestre. Deberá redactarse en primera persona del singular y en
+%   pasado, y contemplar algunos de los puntos que se mencionan a continuación,
+%   con los que a juicio del asesor y del alumno se demuestren sus capacidades y
+%   competencias para el ejercicio de la profesión:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Introducción y Objetivo
+%   Presentar de forma clara, breve y precisa el
+%   contenido del informe, que puede corresponder a un proyecto de mejora,
+%   propuesta de cambio o actividades profesionales diversas desempeñadas
+%   en el puesto que ocupó, y definir el objetivo de la propuesta, mostrando
+%   la capacidad para aplicar los conocimientos adquiridos en su formación
+%   como ingeniero.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Introducción y Objetivo}
+
+[Presentar de forma clara, breve y precisa el contenido del informe, que puede corresponder a un proyecto de mejora, propuesta de cambio o actividades profesionales diversas desempeñadas en el puesto que ocupó, y definir el objetivo de la propuesta, mostrando la capacidad para aplicar los conocimientos adquiridos en su formación como ingeniero.]
+
+%Start off all chapters with \verb|chapter|. \index{chapter!numbered} \verb|\extrachapter| will give you an unnumbered chapter that's added to the Table of Contents. \index{chapter!unnumbered}
+
+%Here's an example of a citation \citep{GMP81}. Here's another \citep{PP98}. These will appear in the big bibliography at the end of the thesis.
+
+%\index{bibliography}
+
+%If you're new to \LaTeX{} and would like to begin by learning the basics, please see our free online course available at:\\ \url{https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-1} \index{LaTeX@\LaTeX}
+
+%You can define nomenclatures \index{nomenclature} as you talk about key terms in your thesis. So what's a galaxy? \nomenclature{Galaxy}{A system of stars independent from all other systems}
+
+%\section{This is a Section}
+%\lipsum[1-2]
+
+%\begin{figure}[hbt!]
+%    \centering
+%    \includegraphics[width=.3\textwidth]{img/caltech.png}
+%    \caption{This is a figure}\label{fig:logo}
+%    \index{figures}
+%\end{figure}
+
+%\subsection{This is a subsection}
+
+%\begin{table}[hbt!]
+%    \centering
+%    \begin{tabular}{ll}
+%        \hline
+%        Area & Count\\
+%        \hline
+%        North & 100\\
+%        South & 200\\
+%        East & 80\\
+%        West & 140\\
+%        \hline
+%    \end{tabular}
+%    \caption{This is a table}\label{tab:sample}
+%    \index{tables}
+%\end{table}
+
+%\lipsum[3] \nomenclature{Asteroid}{A very small planet ranging from 1,000 km to less than one km in diameter. Asteroids are found commonly around other larger planets}
+
+%\lipsum[4-5] 
+
+%Here's an endnote.\endnote{Endnotes are notes that you can use to explain text in a document.}
+
+%\section{This is Another Section}
+%\lipsum[6-7] 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Antecedentes
+%   Enmarcar en el ámbito de la ingeniería los antecedentes
+%   del problema, tema, actividades o proyecto en el que se trabajó.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Antecedentes}
+
+[Enmarcar en el ámbito de la ingeniería los antecedentes del problema, tema, actividades o proyecto en el que se trabajó.]
+
+%\begin{refsection}
+%If you'd like to have separate bibliographies at the end of each chapter, put a \verb|refsection| around the material of each chapter, then cite as usual -- e.g.~\citep{GMP81,Ful83}. Then do a \verb|\printbibliography| just before the \verb|refsection| ends. \index{bibliography!by chapter}
+
+%\printbibliography[heading=subbibliography]
+%\end{refsection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Definición del problema o contexto de la participación profesional
+%   Describir claramente el proyecto, propuesta de cambio, actividades o
+%   problemática a resolver en el contexto de la ingeniería, así como sus
+%   alcances.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Definición del problema o contexto de la participación profesional}
+
+[Describir claramente el proyecto, propuesta de cambio, actividades o problemática a resolver en el contexto de la ingeniería, así como sus alcances.]
+
+%\publishedas{Cahn:etal:2015}
+
+%[You can have chapters that were published as part of your thesis. The text style of the body should be single column, as it was submitted to the publisher, not formatted as the publisher did.]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Metodología utilizada
+%   Describir los métodos, técnicas o procedimientos de ingeniería empleados.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Metodología utilizada}
+
+[Describir los métodos, técnicas o procedimientos de ingeniería empleados.]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Resultados
+%   Descripción y análisis de los resultados de su participación
+%   dentro del proyecto o actividades realizadas, así como de las aportaciones
+%   que muestren su capacidad y criterio profesional al aplicar los
+%   conocimientos adquiridos durante la carrera.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Resultados}
+
+[Descripción y análisis de los resultados de su participación dentro del proyecto o actividades realizadas, así como de las aportaciones que muestren su capacidad y criterio profesional al aplicar los conocimientos adquiridos durante la carrera.]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Conclusiones
+%   Deben reflejar los logros alcanzados conforme a los objetivos planteados.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Conclusiones}
+
+[Deben reflejar los logros alcanzados conforme a los objetivos planteados.]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Bibliografía
+%   Las principales fuentes consultadas y de apoyo para
+%   realizar su trabajo (libros, revistas, multimedia, etc.).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\printbibliography[heading=bibintoc]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Apéndices/Anexos
+%   Debe contener única y exclusivamente aquella información que
+%   ayude al lector a comprender un poco más del asunto, pero que harían
+%   una interrupción abrupta a la lectura en caso de incorporarse en el mismo
+%   texto.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Apéndice A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Questionnaire}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Apéndice B
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Consent Form}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Para generar índices (?)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\printindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Notas a píe de página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theendnotes
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Material de mano
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Pocket materials at the VERY END of thesis
+\pocketmaterial
+\extrachapter{Pocket Material: Map of Case Study Solar Systems} 
+
+\end{document}
