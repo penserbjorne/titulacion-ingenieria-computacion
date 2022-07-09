@@ -144,7 +144,7 @@
 \newcommand{\orcid}[1]{\gdef\@orcid{#1}}
 \orcid{xxxxx}
 \newcommand{\rightsstatement}[1]{\gdef\@rightsstatement{#1}}
-\rightsstatement{All rights reserved}
+\rightsstatement{Esta obra está bajo una licencia \\ ``Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional``.}
 % The copyright page is new, must conform to CIT requirements
 %
 \newcommand{\makecopyright}{%
