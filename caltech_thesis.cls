@@ -19,7 +19,7 @@
 \RequirePackage{graphicx}
 
 %% Overleaf 24 Jan: Formatting of ToC and lists
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{3}
 \let\listoffigurestables\listoffigures
 \appto{\tableofcontents}{\clearpage}
 \appto{\listoffigurestables}{\clearpage}
@@ -83,6 +83,8 @@
 }{}{}
 
 % Overleaf, 22 January 2016: \subsection and onwards shouldn't be numbered
+\setsecnumdepth{subsection}
+\setsecnumdepth{subsubsection}
 \setcounter{secnumdepth}{3}
 \RequirePackage{letterspace} % not so heavy...
 
