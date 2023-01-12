@@ -156,7 +156,7 @@
  \begin{center}
    \SingleSpacing
    \copyright~\@copyyear\par
-   \@author\\ORCID: \@orcid\par
+   \@author\par%\\ORCID: \@orcid\par
    \@rightsstatement\par
  \end{center}}
  \newpage
