@@ -124,16 +124,16 @@
 % Additional titlepage definitions
 %
 \newcommand{\degreeaward}{\gdef\@degreeaward}
-\degreeaward{Doctor of Philosophy}                  % Default is Ph.D.
+\degreeaward{Ingeniero en Computación}                  % Default is Ph.D.
 
 \newcommand{\university}{\gdef\@university}
-\university{California Institute of Technology}     % Default is Caltech
+\university{UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO}     % Default is Caltech
 
 \newcommand{\unilogo}{\gdef\@unilogo}
-\unilogo{img/caltech.png}                                  % Caltech logo
+\unilogo{img/01-logo-unam.png}                                  % Caltech logo
 
 \newcommand{\address}{\gdef\@address}
-\address{Pasadena, California}                      % Default is Caltech
+\address{Ciudad de México, México}                      % Default is Caltech
 
 \newcommand{\copyyear}{\gdef\@copyyear}
 \newcommand{\defenddate}{\gdef\@defenddate}
