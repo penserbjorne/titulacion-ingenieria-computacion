@@ -297,6 +297,67 @@ Es así que de lo anterior establecí los criterios que debía cumplir el diseñ
     \item Utilizar herramientas basadas en software libre y de código abierto.
 \end{itemize}
 
+\section{Investigación y diseño del laboratorio de amenazas}
+
+Realicé un análisis de las herramientas disponibles en el mercado que se alineaban con nuestros criterios de desarrollo. Esta investigación me permitió seleccionar las más adecuadas para nuestras necesidades, diseñando un marco de integración y operación que incluyó elementos complementarios para una funcionalidad completa.
+
+\subsection{Sistematización y mejora de procesos de atención de casos y análisis técnicos}
+
+A pesar de la existencia de prácticas y metodologías previas para la atención de casos y sus análisis técnicos, existía una falta de sistematización que ya se ha mencionado previamente. Mi enfoque se centró en identificar y documentar estas prácticas para establecer un marco de trabajo claro y estandarizado. Entre los procesos documentados se encuentran:
+
+\begin{itemize}
+    \item Gestión y respuesta a incidentes, registro de incidentes y casos, y registro de indicadores de compromiso.
+    \item Procedimientos de respuesta rápida y triage para diversas amenazas digitales.
+    \item Estrategias de inteligencia de amenazas, análisis de riesgo y estudios de infraestructuras maliciosas.
+    \item Técnicas de análisis forense adaptadas a diferentes sistemas operativos y dispositivos.
+    \item Metodologías de análisis de tráfico de red.
+    \item Prácticas de ingeniería inversa y análisis de malware.
+\end{itemize}
+
+%\begin{itemize}
+%    \item Atención de casos
+%    \begin{itemize}
+%        \item Protocolo de atención de casos
+%        \item Registro de incidentes y casos
+%        \item Registro de indicadores de compromiso
+%    \end{itemize}
+%    \item Respuesta rápida y triage
+%    \begin{itemize}
+%        \item Phishing
+%        \item Equipos de computo
+%        \item Dispositivos móviles
+%        \item Cuentas en línea
+%        \item Sitios web
+%    \end{itemize}
+%    \item Inteligencia de amenazas
+%    \begin{itemize}
+%        \item Análisis de riesgo
+%        \item Análisis de infraestructura maliciosa
+%        \item Filtraciones de datos
+%    \end{itemize}
+%    \item Análisis forense
+%    \begin{itemize}
+%        \item Windows
+%        \item Mac
+%        \item Android
+%        \item iOS
+%    \end{itemize}
+%    \item Análisis de tráfico de red
+%    \begin{itemize}
+%        \item Captura y análisis de tráfico de red
+%        \item Captura y análisis flujo de red
+%        \item Captura y análisis de tráfico de red con PiRogue
+%    \end{itemize}
+%    \item Ingeniería inversa
+%    \item Análisis de malware
+%\end{itemize}
+
+Para la redacción y estandarización de estos contenidos coordine el diseño de lineamientos de redacción interna basados en la metodología \href{https://diataxis.fr/}{Diátaxis}, la cual es una metodología de redacción de documentación técnica utilizada por distintas empresas como Canonical o CloudFlare.
+
+Para almacenar esta información, era necesario utilizar una herramientas que permitiera una redacción con un lenguaje sencillo, mantener un control de versiones para un trabajo colaborativo con seguimiento de cambios, y compartir la información basado en controles acceso bien definidos.
+
+Así coordine la investigación y evaluación de herramientas que cumplieran estos requerimientos. La herramientas elegida fue \href{https://js.wiki/}{Wiki.JS} la cual permite redactar el contenido con el lenguaje \nomenclature{Markdown}{Pendiente.}markdown, conectar el contenido a un repositorio basado \nomenclature{git}{Pendiente.}git, y definir controles basados en \nomenclature{Traffic Light Protocol (TLP)}{Pendiente}\href{https://www.first.org/tlp/}{TLP}.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Resultados
