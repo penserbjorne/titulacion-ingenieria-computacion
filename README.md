@@ -33,6 +33,12 @@ A su vez los archivos fuente se basan en la plantilla
 [Caltech Thesis LaTeX Template (with logo)](https://www.overleaf.com/latex/templates/caltech-thesis-latex-template-with-logo/kgwqvkbfkwmx)
 disponible en [Overleaf](https://www.overleaf.com).
 
+## Enlaces útiles
+
+* [Titulación FI](http://escolar.ingenieria.unam.mx/titulacion/)
+* [Opciones de Titulación](https://www.ingenieria.unam.mx/dimei/opciones_titulacion.php)
+* [Guía para presentar un informe de trabajo profesional como modalidad de titulación](http://escolar.ingenieria.unam.mx/_adicionales/titulacion/GuiaInformeTrabajo2019.pdf)
+
 ## Licenciamiento
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
